@@ -1,1 +1,17 @@
 @import 'ember-paper';
+
+.flex-right{
+	margin-left:auto;
+}
+
+body{
+	background-color:grey;
+}
+
+.container{
+	background-color:white;
+}
+
+md-input-container{
+	width: 100%;
+}

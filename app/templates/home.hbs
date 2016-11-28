@@ -1,0 +1,27 @@
+
+<div class="row"> 
+<!--empty div-->
+</div>
+<div class="row"> 
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4">
+
+	{{paper-input label="Name" value=name onChange=(action (mut name))}}
+	<br>
+	{{paper-input label="Password" type="password" value=password onChange=(action (mut password))}}
+
+   {{paper-icon 'person'}}
+   {{#if session.currentUser}}
+		{{#paper-button action='logout'}}Logout{{/paper-button}}
+   {{else}}
+	   {{#paper-button action='login'}}Login{{/paper-button}}
+	   {{#paper-button action='register'}}Register{{/paper-button}}
+   {{/if}}
+</div>
+
+
+</div>
+
+
